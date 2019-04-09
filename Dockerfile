@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package.json /app
 RUN npm install
 COPY . /app
-CMD nodemon App.js
 EXPOSE 5000
+CMD ["node", "App.js"]
